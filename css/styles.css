@@ -1,0 +1,1001 @@
+/* Variables globales */
+:root {
+  --primary-color: #f8ab52;
+  --secondary-color: #919090;
+  --color-white: #f5f1f1;
+  --color-black: #141313;
+  --color-orange: #FBB141;
+  --color-gray: #c0c6cb;
+  --color-orange2: #fcb900;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  /* Sombra */
+
+  --gray-color: #f5f5f5;
+  --hover-gray: #ccc;
+  --text-color: #333;
+}
+
+
+
+
+/* Reset y estilos base */
+html,
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--color-white);
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+
+}
+
+
+body h2 {
+  color: var(--color-orange);
+}
+
+
+section {
+  padding: 1rem 2rem;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+/* -------------------NAVBAR ---------------------------------------------*/
+nav {
+  border-bottom: 1px solid var(--color-gray);
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+nav .nav-link {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-orange2);
+}
+
+nav .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+/*----------------------- HERO SECTION ------------------------------------------------*/
+#hero {
+  position: relative;
+  background-image: url('../img/producto1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: left;
+  /* Alineamos contenido a la izquierda */
+  align-items: left;
+  text-align: left;
+  /* Justificamos el texto hacia la izquierda */
+  padding: 0 1rem;
+  color: var(--color-white);
+
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  margin: 0 1rem;
+  text-align: left;
+}
+
+#hero h2 {
+  font-size: 2rem;
+  opacity: 0;
+  animation: fadeInLeft 2s forwards;
+}
+
+#hero p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  opacity: 0;
+  animation: fadeInRight 2s forwards;
+}
+
+#hero a {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+#hero a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Animaciones hero--------------------------- */
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animación de los símbolos matemáticos flotando */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.symbols {
+  position: absolute;
+  top: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: floating 3s ease-in-out infinite;
+  font-size: 2rem;
+
+  width: 100%;
+}
+
+.symbols span {
+  margin: 0 20px;
+  /* Añadimos un margen para separar más los símbolos */
+}
+
+/* Media Queries */
+/* Base: mobile-first */
+
+/* ------------- SECCION 2 - QUIENES SOMOS---------------------------------*/
+
+
+
+#quienes-somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+  animation: fadeIn 1.5s ease-in-out;
+  color: var(--secondary-color);
+}
+
+.section2 {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.section2-1,
+.section2-2 {
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+
+#quienes-somos h2 {
+
+  margin-top: auto;
+  font-size: 2rem;
+
+}
+
+#quienes-somos p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-right: 15px;
+
+
+
+}
+
+.quienes-somos-img {
+  margin-top: 1 rem;
+  width: 100%;
+  max-width: 500px;
+
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  SECCION VISION---------------------------------  */
+#vision {
+  background-image: url(../img/producto3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px;
+}
+
+.vision-container {
+  text-align: justify;
+}
+
+#vision h2 {
+  font-size: 2rem;
+}
+
+#vision p {
+
+  color: var(--color-white);
+
+}
+
+/* SECCION SERVICIOS -------------------------------------------  */
+.services-section {
+  padding: 2rem 1rem;
+  background-color: var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  /* Para alinear el contenido al centro */
+}
+
+
+.services-header {
+  text-align: left;
+  margin-bottom: 2rem;
+  /* Para que se separe más del contenido */
+  width: 100%;
+}
+
+.services-header h2 {
+  margin-left: 20px;
+  font-size: 2rem;
+  color: var(--color-orange);
+
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  /* Altura más grande */
+}
+
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+  color: white;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-color);
+  z-index: -1;
+  transition: left 0.5s ease;
+}
+
+.service-card:hover::before {
+  left: 0;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: var(--color-orange);
+}
+
+.service-card p {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+/* --------------------------SECCIÓN CONFÍAN EN NOSOTROS ------------------------- */
+.trusted-section {
+  padding: 2rem 1rem;
+  background: var(--color-light-gray);
+  text-align: left;
+}
+
+.trusted-header h2 {
+  font-size: 1.8rem;
+  color: var(--color-orange);
+  margin-bottom: 0.5rem;
+}
+
+.trusted-header p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.trusted-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.trusted-logos .logo {
+  width: 90px;
+  height: auto;
+  filter: grayscale(100%); /* Estilo opcional para logos */
+  transition: filter 0.3s ease;
+}
+
+.trusted-logos .logo:hover {
+  filter: grayscale(0%);
+}
+
+@media (min-width: 768px) {
+  .trusted-logos {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 80px;
+  }
+
+  .trusted-header h2 {
+    font-size: 2rem;
+  }
+
+  .trusted-header p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .trusted-logos {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    margin: 20px;
+    margin-left: 50px;
+  }
+
+  .trusted-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .trusted-header p {
+    font-size: 1.2rem;
+  }
+
+  .trusted-logos .logo {
+    width: 120px;
+  }
+}
+
+
+
+/* SECCIÓN DE CONTACTO --------------------------------- */
+.contact-section {
+  padding: 2rem 1rem;
+  background: var(--color-light-gray);
+}
+
+/* CONTENEDOR */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2rem;
+}
+
+/* FORMULARIO */
+.contact-form {
+  background: var(--color-white);
+  padding: 1.5rem;
+ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 1.8rem;
+  color: var(--color-orange);
+  margin-bottom: 1rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-orange);
+}
+
+.contact-form .btn-enviar {
+  display: block;
+  width: 100%;
+  max-width: 200px; /* Más largo pero ajustable */
+  padding: 0.8rem;
+  background: var(--color-orange);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:  0.3s ease-in-out;
+}
+
+.contact-form .btn-enviar:hover {
+  background: var(--secondary-color);
+}
+
+/* INFORMACIÓN DE CONTACTO */
+.contact-info {
+  position: relative; /* Necesario para overlay */
+  color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url('../img/contacto.jpeg') center/cover no-repeat, var(--color-gray);
+}
+
+.contact-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Opacidad de la imagen */
+  z-index: 0; /* Coloca detrás del texto */
+  border-radius: 0.5rem;
+}
+
+.contact-info h2,
+.contact-info p,
+.contact-info i {
+  position: relative;
+  z-index: 1; /* Encima del overlay */
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: var(--color-orange);
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+  color: var(--color-orange);
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 50%;
+  }
+
+  /* Inputs uno al lado del otro */
+  .contact-form .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .contact-form .form-group {
+    flex: 1; /* Distribución uniforme */
+    margin-bottom: 1rem;
+  }
+
+  .contact-form .btn-enviar {
+    width: 200px;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-section {
+    padding: 1rem .8rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .contact-form h2{
+    font-size: 2.5rem;
+  }
+
+  .contact-form label {
+    
+    font-size: 1.2rem;
+   
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+   
+    font-size: 1.2rem;
+   
+  }
+  .contact-form .btn-enviar {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    padding: 2rem;
+    background: url('../img/contacto.jpeg') center/cover no-repeat, var(--color-gray);
+   
+    justify-content: start;
+  }
+
+  .contact-info h2{
+    font-size: 2.5rem;
+  }
+  .contact-info p {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    margin-top: 1.5rem;
+  }
+
+  .contact-container {
+    gap: 2rem;
+  }
+}
+
+/* ------------------------SECCION FOOTER ------------------------------------------- */
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--color-light-gray);
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+}
+
+/* Logo */
+.footer-logo img {
+  width: 160px;
+  margin: 0 auto;
+}
+
+/* Links */
+.footer-links h3 {
+  color: var(--color-orange);
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: var(--color-light-gray);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links ul li a:hover {
+  color: var(--color-orange);
+}
+
+/* Contacto */
+.footer-contact h3 {
+  color: var(--color-orange);
+  margin-bottom: 1rem;
+}
+
+.footer-contact p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-contact .icon-location,
+.footer-contact .icon-phone,
+.footer-contact .icon-mail {
+  color: var(--color-orange);
+}
+
+.footer-contact p:hover {
+  color: var(--color-orange);
+}
+
+/* Footer Inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-gray-light);
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-logo {
+    flex: 1;
+    width: 280px;
+  }
+
+  .footer-links {
+    flex: 1;
+  }
+
+  .footer-contact {
+    flex: 1;
+  }
+}
+@media (min-width: 1024px) {
+
+  .footer-logo img {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.footer-links h3 {
+  font-size: 2rem;
+}
+
+.footer-links ul {
+  font-size: 1.1rem;
+}
+
+
+
+.footer-contact p {
+  font-size: 1.1rem;
+}
+.footer-bottom {
+  
+  font-size: 1rem;
+}
+
+
+}
+
+/* ------------------------Tablets ------------------------------------------------------*/
+@media (min-width: 768px) {
+  #hero {
+    height: 80vh;
+  }
+
+  #hero h2 {
+    font-size: 1.8rem;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+  }
+
+  #hero a {
+    font-size: 1.2rem;
+  }
+
+  /* ------------- SECCION 2 - QUIENES SOMOS---------------------------------*/
+
+  #quienes-somos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    animation: fadeIn 1.5s ease-in-out;
+    color: var(--secondary-color);
+  }
+
+  .section2-1 {
+    width: 40%;
+    margin-top: 1rem;
+  }
+
+  #quienes-somos h2 {
+
+    margin-top: auto;
+
+
+  }
+
+  #quienes-somos p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-right: 10px;
+
+
+
+  }
+
+  .section2-2 {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  .quienes-somos-img {
+    margin-top: 1 rem;
+    width: 300px;
+    margin: 20px;
+    margin-right: 20px;
+  }
+
+  /*SECCION SERVICIOS ------------------ */
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+/* ------------------------------Desktop--------------------------------------------- */
+@media (min-width: 1024px) {
+  body h2 {
+    color: var(--color-orange);
+    font-size: 2.5rem;
+
+  }
+
+  nav .nav-link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--color-orange2);
+  }
+
+  #hero {
+    height: 90vh;
+    padding: 0 1.9rem;
+
+    display: flex;
+    justify-content: flex-start;
+    /* Alineamos contenido a la derecha */
+    align-items: left;
+    text-align: left;
+    /* Justificamos el texto hacia la derecha */
+
+  }
+
+  .hero-content {
+    margin-top: 60px;
+    text-align: left;
+    width: 600px;
+
+  }
+
+  #hero h2 {
+    margin-top: 60px;
+    font-size: 2.5rem;
+  }
+
+  #hero p {
+
+    font-size: 1.3rem;
+    text-align: justify;
+
+  }
+
+  #hero a {
+    margin-top: 70px;
+    font-size: 1.4rem;
+    border: none;
+  }
+
+
+  .symbols {
+    display: block;
+    position: absolute;
+    top: 70%;
+  }
+
+
+  /* ------------- SECCION 2 - QUIENES SOMOS---------------------------------*/
+  #quienes-somos {
+    display: flex;
+    flex-direction: row;
+    animation: fadeIn 1.5s ease-in-out;
+    color: var(--secondary-color);
+  }
+
+  .section2-1 {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  #quienes-somos h2 {
+    text-align: left;
+    margin-top: auto;
+    font-size: 2.5rem;
+
+
+  }
+
+  #quienes-somos p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-right: 30px;
+
+
+
+  }
+
+  .section2-2 {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  .quienes-somos-img {
+    margin-top: 1rem;
+    width: 1400px;
+
+    margin: 20px;
+  }
+
+  .vision-container {
+    text-align: justify;
+    width: 900px;
+
+  }
+
+  #vision h2 {
+    font-size: 2.5rem;
+  }
+
+  #vision p {
+
+    font-size: 1.15rem;
+    text-align: justify;
+    width: 70%;
+
+  }
+
+  /*---------------SERVICIOS----------------------------------------   */
+  .services-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services-header h2 {
+    margin-left: 30px;
+    font-size: 2.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.7rem;
+  }
+
+  .service-card p {
+    margin-top: 30px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+  }
+
+  .service-card {
+
+    height: 400px;
+    /* Altura más grande */
+  }
+
+}
