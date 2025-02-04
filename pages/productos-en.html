@@ -10,21 +10,18 @@
     <link rel="stylesheet" href="../css/productos.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body>
-        <!-- Navegación -->
-        <header class="bg-white">
+    <!-- Navegación -------------------------->
+    <header class="bg-white">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <!-- LOGO -->
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="../index-en.html">
               <img src="../img/logo2.jpg" alt="logo">
             </a>
     
@@ -40,28 +37,28 @@
                 <!-- Menú desplegable "Sobre Nosotros" -->
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="sobreNosotrosDropdown" role="button" data-bs-toggle="dropdown">
-                    Sobre Nosotros
+                    About Us
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#quienes-somos">Quiénes somos</a></li>
-                    <li><a class="dropdown-item" href="#vision">Nuestra Visión</a></li>
-                    <li><a class="dropdown-item" href="#tecnologias">Tecnologías</a></li>
-                    <li><a class="dropdown-item" href="#confiaron-en-nosotros">Confiaron en nosotros</a></li>
+                    <li><a class="dropdown-item" href="../index-en.html#quienes-somos">Who we are</a></li>
+                    <li><a class="dropdown-item" href="../index-en.html#vision">Our Vision</a></li>
+                    <li><a class="dropdown-item" href="../index-en.html#tecnologias">Technologies</a></li>
+                    <li><a class="dropdown-item" href="../index-en.html#confiaron-en-nosotros">Trust on Us</a></li>
                   </ul>
                 </li>
     
-                <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/productos-en.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contact</a></li>
     
                 <!-- Menú desplegable de idioma -->
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                    🌎 Idioma
+                    🌎 Language
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">🇪🇸 Español</a></li>
-                    <li><a class="dropdown-item" href="productos-en.html">🇬🇧 English</a></li>
+                    <li><a class="dropdown-item" href="productos.html">🇪🇸 Spanish</a></li>
+                    <li><a class="dropdown-item" href="#">🇬🇧 English</a></li>
                   </ul>
                 </li>
     
@@ -70,53 +67,48 @@
           </div>
         </nav>
     </header>
-    
     <!-- Carrusel -------------------------->
-    <div id="productosCarousel" class="carousel slide" data-bs-interval="false">
+    <div id="productosCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="../img/producto1.png" class="d-block w-100" alt="Producto 1">
             <div class="carousel-caption">
-              <h3>Programación y monitoreo de transporte en oleoductos y poliductos</h3>
-              <p>Programación de inyecciones, cálculo de mezclas en ductos y tanques, monitoreo permanente de los crudos en la red de transporte.</p>
-              <a href="#producto1" class="btn btn-primary">Ver más</a>
+              <h3>Software programming and transportation monitoring in pipelines and poliducts</h3>
+              <p>Software programming of injections, calculation of mixtures in pipelines and tanks, permanent monitoring of crudes in the transportation network.</p>
+              <a href="#producto1" class="btn btn-primary">See more</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../img/producto3.png" class="d-block w-100" alt="Producto 3">
             <div class="carousel-caption">
-              <h3>Planificación y gestión de terminales</h3>
-              <p>Planificación de operaciones maximizando su ocupación y rentabilidad. Gestión integral incluyendo análisis de laboratorio y control de inventario.</p>
-              <a href="#producto3" class="btn btn-primary">Ver más</a>
+              <h3>Terminal planning and management</h3>
+              <p>Operations planning maximizing occupancy and profitability. Comprehensive management including laboratory analysis and inventory control.</p>
+              <a href="#producto3" class="btn btn-primary">See more</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../img/producto4.png" class="d-block w-100" alt="Producto 4">
             <div class="carousel-caption">
-              <h3>Diseño de red logística</h3>
-              <p>Solución ágil y precisa para análisis estratégicos y estudio de escenarios logísticos de abastecimiento de la red. 
-                .</p>
-              <a href="#producto4" class="btn btn-primary">Ver más</a>
+              <h3>Logistic network design</h3>
+              <p>Agile and accurate solution for strategic analysis and study of logistic scenarios for network supply. </p>
+              <a href="#producto4" class="btn btn-primary">See more</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../img/producto5.png" class="d-block w-100" alt="Producto 5">
             <div class="carousel-caption">
-              <h3>Control de rondas de chequeos de planta
-            </h3>
-              <p>Garantiza el cumplimiento de rondas operativas de chequeo y mantenimiento facilitando el reporte de averías. 
-                .</p>
-              <a href="#producto6" class="btn btn-primary">Ver más</a>
+              <h3>Control of plant check-up rounds</h3>
+              <p>Guarantees compliance with operational check-up and maintenance rounds, facilitating the reporting of breakdowns. </p>
+              <a href="#producto6" class="btn btn-primary">See more</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../img/producto6.png" class="d-block w-100" alt="Producto 6">
             <div class="carousel-caption">
-              <h3>Programación logística de embarcaciones
-            </h3>
-              <p>Permite la programación eficiente de los productos transportados por barcos. 
+              <h3>Vessel logistics programming</h3>
+              <p>Efficient programming of products transported by ships.
             </p>
-              <a href="#producto7" class="btn btn-primary">Ver más</a>
+              <a href="#producto7" class="btn btn-primary">See more</a>
             </div>
           </div>
         </div>
@@ -136,10 +128,9 @@
          <!-- Producto 1 -->
         <div id="producto1"   class="producto">
             <div class="imagen-principal">
-                <h3>Programación y monitoreo de transporte en oleoductos</h3>
+                <h3>Software programming and transportation monitoring in pipelines</h3>
                 <p class="descripcion">
-                    Programación de inyecciones, cálculo de mezclas en ductos y tanques, monitoreo permanente de los
-                    crudos en la red de transporte.
+                    Software programming of injections, calculation of mixtures in pipelines and tanks, permanent monitoring of crudes in the transportation network.
                 </p>
                 <img src="../img/producto1.png" alt="producto">
             </div>
@@ -147,13 +138,16 @@
                 <div class="texto">
                     <ul class="lista-circulos">
                         <li>
-                            Actualización automática del estado del oleoducto.
+                            Automatic update of the pipeline status.
+                            
                         </li>
                         <li>
-                            Cálculo de mezclas tanto en tanques como en ductos.
+                            Calculation of mixtures in both tanks and pipelines.
+                            
                         </li>
                         <li>
-                            Monitoreo de crudos fuera de especificación.
+                            Monitoring of crudes out of specification.
+                            
                         </li>
                     </ul>
                 </div>
@@ -166,10 +160,10 @@
         <!-- producto 2 -->
         <div  class="producto">
             <div class="imagen-principal">
-                <h3>Programación de poliductos</h3>
+                <h3>Polyduct programming </h3>
                 <p class="descripcion">
-                    Programación optimizada y monitoreo del transporte de productos sobre una red de poliductos y
-                    terminales asociadas.
+                    Optimized programming and monitoring of product transportation over a network of pipelines and associated terminals.
+                  
 
                 </p>
                 <img src="../img/producto1.png" alt="producto">
@@ -178,15 +172,18 @@
                 <div class="texto">
                     <ul class="lista-circulos">
                         <li>
-                            Cálculo dinámico de ubicación de interfaces y remesas.
+                            Calculation of the optimal programming of the polyducts.
+                            
 
                         </li>
                         <li>
-                            Monitoreo de existencias en terminales. Alarma ante posibles quiebres de stock
+                            Monitoring of stocks in terminals. Alarm in case of possible stockouts.
+                           
 
                         </li>
                         <li>
-                            Reportes de horario de llegadas de remesas a cada terminal.
+                            Reports on the arrival times of remittances at each terminal.
+                            
 
                         </li>
                     </ul>
@@ -200,12 +197,10 @@
         <!-- producto 3 -->
         <div  id="producto3" class="producto">
             <div class="imagen-principal">
-                <h3>Planificación y gestión de terminales</h3>
+                <h3>Terminal planning and management </h3>
                 <p class="descripcion">
-                    Planificación diaria y mensualmente de las operaciones de recepción y despacho de la terminal
-                    maximizando su ocupación y rentabilidad.
-                    Gestión integral de la terminal incluyendo análisis de laboratorio, certificaciones, control de
-                    inventario, balance diario y mensual.
+                    Daily and monthly planning of terminal reception and dispatch operations, maximizing occupancy and profitability.
+                    
 
                 </p>
                 <img src="../img/producto3.png" alt="producto">
@@ -214,23 +209,24 @@
                 <div class="texto">
                     <ul class="lista-circulos">
                         <li>
-                            Recepción y despacho por ductos, barcos y camiones.
+                            Reception and dispatch by ducts, ships and trucks.
+                        </li>
+                        <li>
+                            Planning of operations for the next 30 days.
+                            
 
                         </li>
                         <li>
-                            Planificación de operaciones a 30 días.
-
+                            Dynamic calculation of stocks.
+                         
                         </li>
                         <li>
-                            Cálculo dinámico de existencias.
-
+                            Analysis of virtual operation scenarios.
+                           
                         </li>
                         <li>
-                            Análisis de escenarios virtuales de operación.
-                        </li>
-                        <li>
-                            Módulos para el manejo de análisis de laboratorio, certificaciones y balances.
-
+                            Modules for laboratory analysis, certifications and balances.
+                            
                         </li>
                     </ul>
                 </div>
@@ -243,11 +239,10 @@
         <!-- producto 4 -->
         <div id="producto4" class="producto">
             <div class="imagen-principal">
-                <h3>Diseño de red logística</h3>
+                <h3>Logistic network design</h3>
                 <p class="descripcion">
-                    Solución ágil y precisa para análisis estratégicos y estudio de escenarios logísticos de
-                    abastecimiento de la red.
-
+                    Agile and accurate solution for strategic analysis and study of logistic scenarios for network supply.
+                    
                 </p>
                 <img src="../img/producto4.png" alt="producto">
             </div>
@@ -255,19 +250,22 @@
                 <div class="texto">
                     <ul class="lista-circulos">
                         <li>
-                            Cálculo de costos asociados a los distintos medios de transporte.
+                            Calculation of costs associated with different means of transportation.
+                            
 
                         <li>
-                            Optimización del costo logístico definiendo medios de transporte y zonas de influencia.
-
-                        </li>
-                        <li>
-                            Análisis del impacto de inversión o desinversión en la red.
+                            Optimization of the logistic cost by defining means of transportation and influence areas.
+                            
 
                         </li>
                         <li>
-                            Evaluación del impacto de modificaciones en la demanda. Visualización geo-referenciada de la
-                            red.
+                            Analysis of the impact of investment or divestment in the network.
+                            
+
+                        </li>
+                        <li>
+                            Evaluation of the impact of modifications in demand. Geo-referenced network visualization.
+                           
 
                         </li>
                     </ul>
@@ -281,10 +279,10 @@
         <!-- producto 5 -->
         <div id="producto5" class="producto">
             <div class="imagen-principal">
-                <h3>Optimización de operaciones en grandes oleoductos </h3>
+                <h3>Optimization of large pipeline operations </h3>
                 <p class="descripcion">
-                    Herramienta computacional diseñada y desarrollada para simular el comportamiento fluido-dinámico del
-                    ducto y a la vez optimizar su operatoria, asistiendo en tiempo real a los operarios.
+                    Computational tool designed and developed to simulate the fluid-dynamic behavior of the duct and at the same time optimize its operation, assisting operators in real time.
+                    
                 </p>
                 <img src="../img/producto5.png" alt="producto">
             </div>
@@ -292,19 +290,21 @@
                 <div class="texto">
                     <ul class="lista-circulos">
                         <li>
-                            Integración con sistema SCADA para tomar presiones y caudales instantáneos.
+                            Integration with SCADA system to take instant pressures and flows.
+                          
 
                         <li>
-                            Simulación fluido-dinámica para análisis de escenarios de operación.
-
+                            Fluid-dynamic simulation for operation stages analysis.
+                            
 
                         </li>
                         <li>
-                            Optimización de la operación del oleoducto minimizando los costos de bombeo.
+                            Optimization of the operation of the pipeline minimizing pumping costs.
+                            
                         </li>
                         <li>
-                            Modelado de operaciones diarias semanales y mensuales para evaluar capacidades de
-                            transporte.Simulador para capacitación supervisada de operarios.
+                            Modeling of weekly and monthly daily operations to evaluate transport capacities. Simulator for supervised operator training.
+                            
                         </li>
 
                     </ul>
@@ -318,10 +318,9 @@
         <!-- producto 6 -->
         <div class="producto">
             <div id="producto6" class="imagen-principal">
-                <h3>Control de rondas de chequeos de plantas </h3>
+                <h3>Plant check rounds control </h3>
                 <p class="descripcion">
-                    Garantiza el cumplimiento de rondas operativas de chequeo y mantenimiento facilitando el reporte de
-                    averías.
+                    Guarantees compliance with operational check-up and maintenance rounds, facilitating the reporting of breakdowns.
 
                 </p>
                 <img src="../img/producto6.png" alt="producto">
@@ -330,17 +329,21 @@
                 <div class="texto">
                     <ul class="lista-circulos">
                         <li>
-                            Soporte para los operarios a cargo de rondines de chequeo. Utilización desde dispositivos
-                            móviles.
+                            Support for operators in charge of check-up rounds. Use from mobile devices.
+                        </li>
+                        <li>
+                            Compatible with QR, RFID and NFC codes. GPS tracking of operators.
+                           
+                        </li>
+                        <li>
+                            Transfer of measurements, optical and infrared images.
+                           
+                        </li>
                         <li>
 
-                            Compatible con códigos QR, RFID y NFC. Seguimiento GPS de operarios.
-                        </li>
-                        <li>
-                            Transferencia de mediciones, imágenes ópticas e infrarrojas.
-                        </li>
-                        <li>
-                            Panel de administración central.
+                            Central administration panel.
+                           
+
                         </li>
 
                     </ul>
@@ -354,10 +357,12 @@
         <!-- producto 7 -->
         <div id="producto7"  class="producto">
             <div class="imagen-principal">
-                <h3> Programación logística de embarcaciones
+                <h3> 
+                    Vessel logistics programming
                 </h3>
                 <p class="descripcion">
-                    Permite la programación eficiente de los productos transportados por barcos.
+
+                    Efficient programming of products transported by ships.
 
 
                 </p>
@@ -367,18 +372,18 @@
                 <div class="texto">
                     <ul class="lista-circulos">
                         <li>
-                            Simulación de movimiento de productos y seguimiento de las existencias en los puntos de
-                            almacenamiento.
+                            Simulation of product movement and tracking of stocks at storage points.
+                            
 
                         <li>
-
-                            Actualización de acciones ejecutadas con mediciones on-line. Optimización de los programas
-                            de la terminal.
+                            Update of actions executed with online measurements. Optimization of terminal programs.
+                            
 
 
                         </li>
-                        <li>Administración de operaciones de remolque y amarre con cálculos de facturación.
-
+                        <li>
+                            Administration of towing and mooring operations with billing calculations.
+                          
 
                         </li>
 
@@ -406,26 +411,29 @@
           <div class="footer-links">
             <h3>Links</h3>
             <ul>
-              <li><a href="../index.html#quienes-somos"><i class="fas fa-users"></i> Quienes somos</a></li>
-              <li><a href="../index.html#vision"><i class="fas fa-lightbulb"></i> Nuestra visión</a></li>
-              <li><a href="../index.html#servicios"><i class="fas fa-cogs"></i> Nuestros servicios</a></li>
-              <li><a href="#productos"><i class="fas fa-box"></i> Nuestros productos</a></li>
-              <li><a href="../index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+              <li><a href="../index-en.html#quienes-somos"><i class="fas fa-users"></i> Who we are</a></li>
+              <li><a href="../index-en.html#vision"><i class="fas fa-lightbulb"></i> Our vision</a></li>
+              <li><a href="../index-en.html#servicios"><i class="fas fa-cogs"></i> Our services</a></li>
+              <li><a href="../index-en.html#confiaron-en-nosotros"><i class="fas fa-handshake"></i> Trust on Us</a></li>
+              <li><a href="#tecnologias"><i class="fas fa-laptop-code"></i> Technologies</a></li>
+
+              <li><a href="pages/productos-en.html"><i class="fas fa-box"></i> Products</a></li>
+              <li><a href="../index-en.html#contacto"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
           </div>
       
           <!-- Información de contacto -->
           <div class="footer-contact">
-            <h3>Contacto</h3>
+            <h3>Contact Us</h3>
           
             <p><i class="fas fa-map-marker-alt"></i> Tandil, Buenos Aires, Argentina</p>
             <p><i class="fas fa-envelope"></i> Email: info@ssesa.com.ar</p>
-            <p><i class="fas fa-phone-alt"></i> Teléfono: +54 9 249 4555209</p>
+            <p><i class="fas fa-phone-alt"></i> Phone number: +54 9 249 4555209</p>
            
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2025 Software Simulation Engineers S.A. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Software Simulation Engineers S.A. All rights reserved.</p>
         </div>
       </footer>
     <!-- Bootstrap JS -->
